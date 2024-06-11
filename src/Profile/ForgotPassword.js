@@ -18,9 +18,7 @@ const ForgotPassword = () => {
         e.preventDefault();
         const data = new FormData(e.currentTarget);
         const email = data.get("email");
-        const url = process
-                        .env
-                        .REACT_APP_BACKEND_URL + "/api/forgotPassword";
+        const url = "http://localhost:9763/api/forgotPassword";
         const res = await axios.post(url, { email: email });
         if (res.data.success === false) {
             toast.error(res.data.message, {
