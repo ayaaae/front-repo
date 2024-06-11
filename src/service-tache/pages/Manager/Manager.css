@@ -1,0 +1,209 @@
+.tabl thead{
+    background-color: rgba(95, 36, 159, 0.87);
+    color: white;
+    border-radius: 10px;
+}
+.tabl{
+border: rgba(95, 36, 159, 0.87) solid 1px;    
+    margin: 10px;
+    width: 98%;
+}
+.overlay{
+    position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(247, 237, 237, 0.411); /* Black background with opacity */
+  cursor: pointer; /* Add a pointer on hover */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input::placeholder {
+  font-weight: bold;
+  opacity: 0.5;
+  color:black;
+}
+
+.overlay2{
+
+  position: fixed; /* Sit on top of the page content */
+width: 100%; /* Full width (cover the whole page) */
+height: 100%; /* Full height (cover the whole page) */
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(247, 237, 237, 0.411); /* Black background with opacity */
+cursor: pointer; /* Add a pointer on hover */
+display: flex;
+justify-content: center;
+margin-top: 1%;
+align-items: center;
+background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+z-index: 1000; /* Ensure this is higher than other elements */
+
+}
+
+.sidenav2 {
+    height: 100%;
+    
+    width: fit-content;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    color:#ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items vertically */
+    overflow-x: hidden;
+    padding-top: 20px;
+    color:#ffffff;
+  }
+  
+  .sidenav2 button {
+    
+    padding: 5px 5px;
+    margin-bottom:10px ;
+    width: 50px;
+    font-size: 17px;
+    font-style: italic;
+    background-color: rgba(95, 36, 159);
+    border-radius: 10px;
+    color: #ffffff;
+   
+  }
+  
+  .sidenav2 button:hover {
+    color: rgba(95, 36, 159);
+    background-color: white;
+  }
+  
+  .main2 {
+    margin-left: 50px; /* Same as the width of the sidenav */
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+.InnerHidden{
+    margin-top:1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 0px;
+    width: 40%;
+    
+    box-shadow: 0px 0px 10px rgb(209, 179, 241);
+}
+
+
+.InnerHidden2{
+  margin-top:1px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 0px;
+  width: 30%;
+  box-shadow: 0px 0px 10px rgb(209, 179, 241);
+  margin-left: 10px;
+  
+}
+
+
+.InnerHidden3{
+  margin-top:1px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 0px;
+  width: 100%;
+  border-color: #757272;
+  box-shadow: 0px 0px 10px rgb(209, 179, 241);
+}
+.InnerHidden4{
+  margin-top:1px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 0px;
+  width: 488px;
+  
+  box-shadow: 0px 0px 10px rgb(124, 124, 124);
+}
+
+.overlay3{
+
+  position: fixed; /* Sit on top of the page content */
+
+top: 0;
+right: 0;
+background-color: rgba(247, 237, 237, 0.411); /* Black background with opacity */
+cursor: pointer; /* Add a pointer on hover */
+  
+margin-top: 85px;
+align-items: center;
+
+}
+
+
+
+
+.icon-container{
+  color: rgba(95, 36, 159);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scrollable-content {
+  overflow-y: auto;
+  max-height: 30%; /* ajustez cette valeur selon vos besoins */
+}
+.backlog-progress {
+  display: flex;
+}
+
+.backlog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.epics span {
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: right;
+  height: 21px;
+  width: 21px;
+  border-radius: 100%;
+  margin-right: 3px;
+  line-height: 3rem;
+}
+
+
+.pr{
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  align-items: center;
+  justify-content: center;
+  height: 21px;
+  width: 21px;
+  border-radius: 100%;
+  margin-right: 3px;
+  
+  
+}

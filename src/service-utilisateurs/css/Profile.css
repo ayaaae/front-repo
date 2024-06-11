@@ -1,0 +1,11 @@
+input[type="email"]
+{
+    font-size:24px;
+}
+.ProfileIMage{
+   
+background-color: rgb(255, 255, 255);
+border: 2px solid black;
+border-radius: 10%;
+padding: 5px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.dhtmlx.com/gantt/edge/dhtmlxgantt.css">
+<script src="https://cdn.dhtmlx.com/gantt/edge/dhtmlxgantt.js"></script>
+</head>
+<body>
+  <div id="gantt_here" style='width:100vw; height:100vh;'></div>
+</body>
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+      gantt.init("gantt_here");
+      gantt.parse ({
+    "data": [
+        { "id": "10", "text": "Social Research Planning", "start_date": "01-04-2023", "duration": 5, "order": 10, "progress": 0.4, "open": true },
+        { "id": "1", "text": "Choosing Research Problems", "start_date": "01-04-2023", "duration": 2, "order": 10, "progress": 0.6, "parent": "10", "priority": "high" },
+        { "id": "2", "text": "Formulating Research Design", "start_date": "03-04-2023", "duration": 3, "order": 20, "progress": 0.6, "parent": "10", "priority": "high" },
+        { "id": "20", "text": "Conducting Research", "start_date": "06-04-2023", "duration": 5, "order": 10, "progress": 0.4, "type": "project", "open": true },
+        { "id": "3", "text": "Data Collection", "start_date": "06-04-2023", "duration": 2, "order": 10, "progress": 0.6, "parent": "20", "priority": "low" },
+        { "id": "4", "text": "Results Analysis", "start_date": "08-04-2023", "duration": 3, "order": 20, "progress": 0.6, "parent": "20", "priority": "medium" }
+    ],
+    "links": [
+        { "id": 1, "source": 1, "target": 2, "type": "0" },
+        { "id": 2, "source": 2, "target": 3, "type": "0" },
+        { "id": 3, "source": 3, "target": 4, "type": "0" },
+        { "id": 4, "source": 2, "target": 5, "type": "0" }
+    ]
+})
+  });
+  </script>
+</html>

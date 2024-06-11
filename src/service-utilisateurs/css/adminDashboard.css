@@ -1,0 +1,128 @@
+/* Définition des tailles d'icônes */
+:root {
+    --icon-size-xxs: 12px;
+    --icon-size-xs: 16px;
+    --icon-size-sm: 20px;
+    --icon-size-md: 24px;
+    --icon-size-lg: 32px;
+    --icon-size-xl: 48px;
+    --icon-size-xxl: 64px;
+  }
+  
+  /* Définition des couleurs des icônes */
+  :root {
+    --icon-color-default: rgb(051,0,114); /* Couleur par défaut */
+    --icon-color-primary: blue; /* Couleur primaire */
+    --icon-color-secondary: red; /* Couleur secondaire */
+    /* Ajoutez d'autres couleurs selon vos besoins */
+  }
+  
+  /* Définition de l'ombre des icônes */
+  :root {
+    --icon-shadow-color: rgb(150, 150, 150);
+  }
+  
+  .icon-xxs,
+  .icon-xs,
+  .icon-sm,
+  .icon-md,
+  .icon-lg,
+  .icon-xl,
+  .icon-xxl {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    vertical-align: middle;
+    color:var(--icon-color-default);
+   /* box-shadow: 2px 2px 4px var(--icon-shadow-color);  /* Ajout de l'ombre ici */
+  }
+  
+  .icon-xxs {
+    width: var(--icon-size-xxs);
+    height: var(--icon-size-xxs);
+    line-height: var(--icon-size-xxs);
+  }
+  
+  .icon-xs {
+    width: var(--icon-size-xs);
+    height: var(--icon-size-xs);
+    line-height: var(--icon-size-xs);
+  }
+  
+  .icon-sm {
+    width: var(--icon-size-sm);
+    height: var(--icon-size-sm);
+    line-height: var(--icon-size-sm);
+  }
+  
+  .icon-md {
+    width: var(--icon-size-md);
+    height: var(--icon-size-md);
+    line-height: var(--icon-size-md);
+    fill: white; /* Couleur de remplissage de l'icône */
+    margin: 13px; /* Marge à l'intérieur du bloc coloré */
+  }
+  
+  .icon-lg {
+    width: var(--icon-size-lg);
+    height: var(--icon-size-lg);
+    line-height: var(--icon-size-lg);
+  }
+  
+  .icon-xl {
+    width: var(--icon-size-xl);
+    height: var(--icon-size-xl);
+    line-height: var(--icon-size-xl);
+  }
+  
+  .icon-xxl {
+    width: var(--icon-size-xxl);
+    height: var(--icon-size-xxl);
+    line-height: var(--icon-size-xxl);
+  }
+  /* Styles pour les blocs colorés */
+.icon-container {
+    display: inline-block;
+    width: 50px; /* Largeur du bloc coloré */
+    height: 50px; /* Hauteur du bloc coloré */
+    margin-right: 10px; /* Marge entre les blocs */
+    border-radius: 8px; /* Bord arrondi du bloc */
+  }
+  
+  .blue-box {
+    background-color: rgb(217, 217, 214); /* Couleur du bloc bleu */
+  }
+  
+  .red-box {
+    background-color: red; /* Couleur du bloc rouge */
+  }
+  
+  .green-box {
+    background-color: green; /* Couleur du bloc vert */
+  }
+  
+  /* Styles pour les icônes */
+  .icon {
+    width: 24px; /* Taille de l'icône */
+    height: 24px;
+    fill: white; /* Couleur de remplissage de l'icône */
+    margin: 13px; /* Marge à l'intérieur du bloc coloré */
+  }
+  .card {
+    border: none; /* Supprimer la bordure */
+    border-radius: 8px; /* Ajouter un bord arrondi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajouter une ombre */
+  }
+  
+  .card-body {
+    padding: 20px; /* Ajouter un remplissage */
+    border: none; /* Supprimer la bordure */
+    border-radius: 8px; /* Ajouter un bord arrondi */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ajouter une ombre */
+  }
+  
+  .mb-5 {
+    margin-bottom: 30px !important; /* Ajuster la marge inférieure */
+  }
+  
